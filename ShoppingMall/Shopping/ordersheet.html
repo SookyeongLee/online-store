@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/301043e4a8.js" crossorigin="anonymous"></script>
+    <title>Order Sheet</title>
+    <link rel="icon" type="image/png" href="image/icia-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="search">
+            <span class="search__logo">
+                <a href="https://www.icia.co.kr/"><img id="logo2" src="image/icia-logo2.png"></a>
+            </span>            
+            <span class="search__input">
+                <input type="text" name="word" id="word">
+                <button type="button" id="button"><i class="fas fa-search"></i></button>
+            </span>
+        </div>
+    </header>   
+    <!-- Section -->  
+    <section id="ordersheet">
+        <!-- 주문서 -->
+        <div class="ordertitle">      
+                <span class="ordertilte__title">주문서</span>
+                <span class="ordertilte__info">장바구니 > <span class="ordertitle-emphasis">주문서</span> > 주문완료</span>                
+        </div> 
+        <!-- 1. 주문상품 정보 -->
+        <div class="product">
+            <table>
+                <caption class="product__title">1. 주문상품 정보</caption>
+                <colgroup>
+                    <col style="width: 70%;">
+                    <col style="width: 8%;">
+                    <col style="width: 14%;">
+                    <col style="width: 8%;">
+                </colgroup>               
+                <thead>
+                    <tr>
+                        <th>상품정보</th>
+                        <th>상품금액</th>
+                        <th>판매자</th>
+                        <th>배송비</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product__info">
+                                <div class="product__info__img"><img  class="product-img" src="image/Green Onion.jpg" alt="대파"></div>
+                                <div class="product__info__descrption">
+                                    <div class="product-name">[상품코드] 대파</div>
+                                    <div class="product-price">2000원 / 1개</div>
+                                </div>       
+                            </div>                  
+                        </td>
+                        <td class="product__info2">2000원</td>
+                        <td class="product__info2">COMPANY_7</td>
+                        <td class="product__info2">무료</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product__info">
+                                <div class="product__info__img"><img  class="product-img" src="image/Green Onion.jpg" alt="대파"></div>
+                                <div class="product__info__descrption">
+                                    <div class="product-name">[상품코드] 대파</div>
+                                    <div class="product-price">2000원 / 1개</div>
+                                </div>       
+                            </div>                  
+                        </td>
+                        <td class="product__info2">2000원</td>
+                        <td class="product__info2">COMPANY_7</td>
+                        <td class="product__info2">무료</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+        <!-- 2. 결제하기 -->         
+        <div id="final">
+            <div class="final__title">3. 결제하기</div>
+            <div class="final__info">
+                <div class="final-price">2000원</div>
+                <div class="final-button"><input type="button" value="결제하기" class="final-Btn"></div>
+            </div>
+        </div>
+    </section>  
+    <!-- Footer -->
+    <footer id="footer">
+        <span class="footer__icon"><a href="https://www.icia.co.kr/"><img id="footer__icon" src="image/icia-logo.png" alt=""></a></span>
+        <span class="footer__rights">Copyright <b>Sookyeong Lee.</b> All Rights Reserved.</span>
+    </footer>  
+</body>
+</html>

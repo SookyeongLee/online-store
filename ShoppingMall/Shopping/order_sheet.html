@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/301043e4a8.js" crossorigin="anonymous"></script>
+    <title>Order Sheet</title>
+    <link rel="icon" type="image/png" href="image/icia-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="search">
+            <span class="search__logo">
+                <a href="https://www.icia.co.kr/"><img id="logo2" src="image/icia-logo2.png"></a>
+            </span>            
+            <span class="search__input">
+                <input type="text" name="word" id="word">
+                <button type="button" id="button"><i class="fas fa-search"></i></button>
+            </span>
+        </div>
+    </header>   
+    <!-- Section -->  
+    <section id="ordersheet">
+        <!-- Order title  -->
+        <div class="ordertitle">      
+                <span class="ordertilte__title">주문서</span>
+                <span class="ordertilte__info">장바구니 > <span class="ordertitle-emphasis">주문서</span> > 주문완료</span>                
+        </div> 
+        <!-- Order product information -->
+        <div class="product">
+            <table>
+                <caption class="product__title">1. 주문상품 정보</caption>
+                <colgroup>
+                    <col style="width: 70%;">
+                    <col style="width: 8%;">
+                    <col style="width: 14%;">
+                    <col style="width: 8%;">
+                </colgroup>               
+                <thead>
+                    <tr>
+                        <th>상품정보</th>
+                        <th>상품금액</th>
+                        <th>판매자</th>
+                        <th>배송비</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product__info">
+                                <div class="product__info__img"><img  class="product-img" src="image/Green Onion.jpg" alt="대파"></div>
+                                <div class="product__info__descrption">
+                                    <div class="product-name">[상품코드] 대파</div>
+                                    <div class="product-price">2000원 / 1개</div>
+                                </div>       
+                            </div>                  
+                        </td>
+                        <td class="product__info2">2000원</td>
+                        <td class="product__info2">COMPANY_7</td>
+                        <td class="product__info2">무료</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+        <!-- Shipping address information & Make a payment -->
+        <div class="information">
+            <div class="shipping">
+                <div class="shipping__title">2. 배송지정보 입력<small style="color: #f60;"> (*필수입력)</small></div>
+                <div class="shipping__info">
+                    <form action="" method="">
+                        <ul>
+                            <li class="info__list">
+                                <span class="shipping__label"><label for="shipping-name"><small style="color: #f60;">*</small>이름</label></span>
+                                <div class="shipping__input"><input type="text" name="shippingInfo" id="shipping-name" class="input-short" required></div>
+                            </li>
+                            <li class="info__list">
+                                <span class="shipping__label"><small style="color: #f60;">*</small>주소</span>
+                                <div class="shipping-addr__wrap">
+                                    <div class="shipping__input"><input type="text" name="shippingInfo" class="input-short" required><button class="input-short">주소찾기</button></div>   
+                                    <div class="shipping__input spacing"><input type="text" name="shippingInfo" class="input-long" required></div>
+                                    <div class="shipping__input"><input type="text" name="shippingInfo" class="input-long" required placeholder="상세주소를 입력해 주세요."></div>
+                                </div>                                
+                            </li>
+                            <li class="info__list">
+                                <span class="shipping__label"><small style="color: #f60;">*</small>연락처</span>
+                                <div class="shopping-tel__wrap">   
+                                    <select name="shippingInfo">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>                                         
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>                                           
+                                    </select>                                   
+                                    - <input type="tel" name="shippingInfo" class="input-short" required>
+                                    - <input type="tel" name="shippingInfo" class="input-short" required>
+                                </div>
+                            </li>
+                            <li class="info__list">
+                                <span class="shipping__label"><label for="shipping-memo">배송시<br>요구사항</label></span>
+                                <div class="shipping__input"><textarea name="shippingInfo" id="shipping-memo" cols="60" rows="3" placeholder="최대 50자까지 입력 가능합니다."></textarea></div>
+                            </li>     
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="payment__title">3. 결제하기</div>
+                <div class="payment__info">
+                    <div class="payment-price">2000원</div>
+                    <div class="payment-button"><input type="button" value="결제하기" class="payment-Btn"></div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- Footer -->
+    <footer id="footer">
+        <span class="footer__icon"><a href="https://www.icia.co.kr/"><img id="footer__icon" src="image/icia-logo.png" alt=""></a></span>
+        <span class="footer__rights">Copyright <b>Sookyeong Lee.</b> All Rights Reserved.</span>
+    </footer>  
+</body>
+</html>
